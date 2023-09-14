@@ -49,7 +49,7 @@ const displayWeather = (data) =>{
 
 // updating weather card dynamically
 const checkWeather = async (city) => {
-    const response = await fetch(apiUrl +`&appid=${apiKey}asdf`+`&q=${city}`)
+    const response = await fetch(apiUrl +`&appid=${apiKey}`+`&q=${city}`)
     let data = await response.json()
     // error handling
     if(response.status === 200){
